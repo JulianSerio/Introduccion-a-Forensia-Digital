@@ -1,0 +1,125 @@
+1) PGP es un criptosistema híbrido que combina técnicas de criptografía simétrica y criptografía asimétrica.
+¿qué aprovecha PGP de cada una de estas técnicas? Si quiere puede utilizar IA, si es así cite la fuente y haga su propia crítica de lo que dice la IA.
+
+Aprovecha lo mejor de ambos tipos de criptografía en un modelo híbrido: De la criptografía simétrica, PGP aprovecha su velocidad y eficiencia para cifrar el contenido real del mensaje. Utiliza un algoritmo simétrico (por ejemplo, AES o IDEA) para generar una clave de sesión aleatoria, con la que cifra el texto o archivo completo. Este enfoque reduce el costo computacional, ya que los algoritmos simétricos son mucho más rápidos para grandes volúmenes de datos. De la criptografía asimétrica, PGP aprovecha la seguridad del intercambio de claves y la autenticidad. La clave de sesión simétrica (usada para cifrar el mensaje) se cifra a su vez con la clave pública del destinatario. Solo el receptor, con su clave privada, puede descifrar esa clave de sesión y, por lo tanto, acceder al contenido. Además, PGP usa la clave privada del emisor para firmar digitalmente el mensaje, garantizando integridad y autenticidad.
+Fuente: ChatGPT (modelo GPT-5, 2025). Basado en el estándar RFC 4880 “OpenPGP Message Format” (IETF, 2007). 
+Coincido con la descripcion de la IA ya que refleja las caracteristicas de ambos modelos. Sin embargo puede representar una version simplificada del proceso de gestion de claves.
+
+2) ¿Cuál es la diferencia entre un sistema de archivos y una partición de disco?
+
+Una particion es una division logica del espacio fisico de un disco (HDD o SSD), permite separar el almacenamiento en secciones independientes que el sistema operativo puede manejar por separado; cada partición cuenta con un filesystem diferente. Mientras que un sistema de archivos es una estructura lógica que organiza los datos dentro de una partición: como se guardan los archivos, como se accede a ellos, como se administran los permisos, etc.
+
+3) Defina brevemente el triángulo CIA, para ello busque en dos motores de IA distintos la respuesta a esta pregunta, copie y pegue la  pregunta que hizo, la respuesta y la fuente.
+Luego con ambas respuestas: complemente, que opina de las respuestas? Haga foco en cuál le pareció mejor? Y que le faltaría o que es distinto de lo que usted conoce?
+
+Pregunta hecha: Defini brevemente el triangulo CIA
+ChatGPT: El triángulo CIA es un concepto fundamental en seguridad informática y representa los tres pilares que garantizan la protección de la información. Sus siglas significan:
+ C – Confidencialidad: asegura que la información solo sea accesible por las personas autorizadas.
+ I – Integridad: garantiza que los datos no sean modificados o alterados sin permiso, manteniendo su exactitud y coherencia.
+ A – Disponibilidad: asegura que la información y los sistemas estén accesibles y funcionando cuando los usuarios los necesiten.
+Fuente: La definición del triángulo CIA proviene de fuentes académicas y de referencia en el campo de la seguridad informática y la ciberseguridad, entre ellas: NIST (National Institute of Standards and Technology) – Guide for Conducting Risk Assessments (NIST SP 800-30) y Security and Privacy Controls for Information Systems and Organizations (NIST SP 800-53), donde se describe el modelo de Confidentiality, Integrity, and Availability (CIA) como base de los controles de seguridad. ISO/IEC 27001 – Norma internacional sobre sistemas de gestión de seguridad de la información, que también adopta el principio CIA como pilar central. CompTIA Security+ y libros de texto como Computer Security: Principles and Practice (Stallings & Brown), que explican el modelo como la base teórica de la seguridad informática.
+
+Gemini: El "triángulo CIA" (o la "tríada CIA") es el modelo base de la seguridad de la información.
+Define los tres objetivos principales que se deben proteger:
+
+Confidencialidad (Confidentiality): Asegurarse de que la información solo sea accesible para las personas autorizadas. Es evitar que los "mirones" vean lo que no deben.
+
+Integridad (Integrity): Garantizar que la información sea precisa y completa, y que no pueda ser modificada por alguien no autorizado. Es decir, que nadie altere los datos sin permiso.
+
+Disponibilidad (Availability): Asegurarse de que la información y los sistemas estén operativos y accesibles para los usuarios autorizados cuando los necesiten. En resumen, que todo funcione cuando lo necesites.
+
+Básicamente, el objetivo es mantener tus secretos en secreto, asegurar que nadie los cambie y que puedas usarlos cuando quieras
+
+Fuente: No es una fuente única, como un artículo de blog o un solo libro.
+
+El triángulo CIA (Confidencialidad, Integridad y Disponibilidad) es el modelo conceptual fundamental y universal de la seguridad de la información.
+
+Es la base sobre la que se construye casi toda la teoría de ciberseguridad. Mi fuente es el consenso establecido de la industria y el ámbito académico durante décadas.
+
+Lo encontrarás definido de esta manera en:
+
+Cualquier libro de texto introductorio a la ciberseguridad.
+
+Materiales de estudio para certificaciones profesionales (como CISSP, CompTIA Security+).
+
+Documentos de estándares de organizaciones como el NIST (Instituto Nacional de Estándares y Tecnología de EE. UU.).
+
+Opinion: La respuesta mas acertada, breve y concisa es la de ChatGPT, en la cual coincido en las definiciones dadas y estas se ajustan completamente a las dadas durante el transcurso de la materia. Destaco esta respueta ya que muestra claramente las fuentes mientras que ante la misma consulta a Gemini no expone facilmente de donde esta obteniendo la informacion 
+
+4) La etapa o fase de adquisición:
+
+Pregunta 4Seleccione una o más de una:
+a.
+Es un informe escrito que describe el proceso llevado a cabo y los datos pertinentes recuperados.
+b.
+Investigar la evidencia hallada y procesada para determinar su importancia y valor probatorio para un caso.
+c.
+Explica el origen y el significado de la evidencia. Permite entender el contenido de la misma.
+d. esta
+Representa la búsqueda, reconocimiento, recolección y documentación de la evidencia digital.
+
+5) Defina Encoding y Criptografía. Cual es la diferencia entre estas dos?
+
+Encoding: La codificación de caracteres es el método que permite convertir un carácter de un lenguaje natural (como el de un alfabeto osilabario) en un símbolo de otro sistema de representación, aplicando reglas de codificación. Se trata de diferentes formas de representar un mismo contenido.
+Criptografia: Consiste en el estudio de técnicas que posibiliten transformar un mensaje legible en otro que no lo es. Sólo el emisor y el destinatario saben como devolverlo a su forma original, haciendo que cualquier otra persona que vea el mensaje cifrado no pueda entenderlo.
+La diferencia radica en su objetivo final, la codificacion permite transformar los datos en otro formato usando un esquema disponible públicamente y puede ser fácilmente retransformado mientras que la criptografia sirve para mantener la confidencialidad de los datos.
+
+6) Describa brevemente qué entiende por Imaging (imagen forense) y cómo lo realizaría.
+
+un "imaging" o la creación de una imagen forense se refiere al proceso de hacer una copia exacta, bit a bit, de un dispositivo de almacenamiento completo (como un disco duro, una memoria USB, un SSD, etc.).
+Fase 1: Preparación
+Se aísla y asegura el dispositivo para evitar alteraciones.
+Si está encendido, se extrae la memoria RAM y luego se apaga de forma controlada.
+Si está apagado, se extrae el disco y se conecta a la estación forense con un bloqueador de escritura.
+Se prepara el equipo con software forense (FTK Imager, Guymager, dd, etc.) y se documentan los datos del dispositivo (modelo, número de serie, estado físico).
+Fase 2: Adquisición
+Se crea una imagen forense del disco usando el bloqueador de escritura.
+Se configuran fuente, destino y formato (E01 o RAW).
+Se registran metadatos del caso.
+Se calculan hashes (MD5/SHA-1) para garantizar la integridad de los datos.
+Fase 3: Verificación y Documentación
+Se verifica la integridad comparando los hashes del disco original y la imagen.
+Luego se documenta todo (fechas, investigador, hashes, tamaño, errores) y se actualiza la cadena de custodia para mantener trazabilidad.
+
+7) ¿Qué es la esteganografía? ¿Para qué se utiliza? De un ejemplo.
+
+La esteganografía es la técnica de ocultar información dentro de otro objeto o medio portador, de manera que la existencia misma del mensaje secreto pase desapercibida. El objetivo es que un observador casual no tenga ninguna razón para sospechar siquiera que hay un mensaje secreto presente.
+Se puede utilizar para la comunicación segura y discreta, control de integridad, campos militares y de inteligencia, etc.
+
+Ejemplo: Marcas de Agua Digitales: Ocultar información de copyright o de propiedad dentro de una imagen, video o audio para proteger los derechos de autor. Esta marca es imperceptible para el usuario, pero puede ser detectada por el propietario para demostrar la autoría. 
+
+8) Describa lo que entiende del siguiente escenario:
+equipo1#  dd if=/dev/sda1 | nc 192.168.1.10 9999
+equipo2# nc –l –p 9999 > /mnt/sda1.dd
+
+El equipo1 está enviando una imagen bit-a-bit de su partición/disco por la red hacia el equipo2, este la escucha y guarda esa transmisión directamente en un archivo. Esto representa un método de adquisición remota rápido y sencillo para obtener una copia forense, pero tiene limitaciones: la transferencia no está autenticada ni cifrada por defecto y no garantiza bloqueo de escritura en el origen.
+
+9) ¿En qué ciudad fue tomada la  foto del link?
+https://archivos.linti.unlp.edu.ar/index.php/s/TQo4iMpEiooduTF
+La respuesta es un hash obentido al procesar el nombre completo de la ciudad en mayúsculas.
+Pregunta 9 Seleccione una:
+a.
+b1d5be5083dd2e41c17ffd05534a555fa0413f7c5a6690b78a887db30fba51cd8b251ea29ad595afead2eb094ee305d8eef72822d26104cbd503f3d1d89d9a60
+b.
+55d1cf25ae326b5a3c3eedac5f09b5205b60945cd607c1478c80fd4a07517f400083fa53fec858cca3d412b6d566d475c3ea825de9d4e742e3b412dbfac5a59e
+c.
+bb7cdfa755bffb93a77c59921abea1663ceeec349cf4327e9b67e9260232b85ebe67545538fa80255eac03aae7b48f99bd64ac8386698e1eccd69c2138849ab2
+d.
+1f6f0184417269de92e188693a203c0d6b8855d1a78d8815e80148a8e02c3a6c
+e.
+96581800db618c7fb3428433c64af3b28f52f25ae5c5987bcfcacb029cc6e4a17226dd09bd5951bf28dcd32d50d61b60a8552aa1475e60f05d28d746668b2c61
+f. ESTAAAA
+d6c21b948958417ca98b682a573eb8aa1084b292d32f760f253ef53da13e5589
+
+10) Que marca esta oculta en esta imagen https://archivos.linti.unlp.edu.ar/index.php/s/27EiHZTqKIUYSTG hay algo oculto.
+El resultado es el sha512 del sha512 de la marca del auto "dentro" de la foto.  Tener en cuenta ponerlo en mayúscula antes de encodearlo.
+Pregunta 10Respuesta
+a.ESTA
+b2d955b90f2249a18d8ccdd7531d63de13a6ba802507636d9dcbbe4e6958a548f8a59c18cf4a9d3abcc1d52062d5376119ee0350bae0e825aa88ebd24e7137a6
+b. X
+cea80979c1e518b2f238693ed3d51ac1b590f11883b3655d340d4c5cd94dfd16a473e5a2cbf9ddd0f91ddaec5a096f8ae49c2a91f8fa89324a4677d4b2b03c4f
+c.X
+MWE5OWM0NmM2ZmQ1NmFhYjJmZmY3OTcyMmZjOTU4ZGM4NmViZGNiODUwZDcwNzk1NjgyODk2YmMzMWE5ODFiYWUzZGFlYWIxMTNhOGQwNTRkOTI1YTYxODE4ZmI4Y2RkYjg3YTVlZjYzM2Y3YjlmNzY1OGQxOGE3ZDZkMzhiZTQgIC0K
+d.
+15821427e46dd1b5b7f7218d97a4a85a9d52442c362250ab28cdb564e3c1aa030582a965750297c4081ee79c9b57ceda5ff5f9ea30c618bed7899d8e0e9ed24d
+ 
